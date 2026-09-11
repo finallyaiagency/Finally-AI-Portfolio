@@ -5,3 +5,7 @@
 @media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
 
 .tools-portfolio{border-top:1px solid #e5e9ee}.project-heading h3{overflow-wrap:anywhere}@media(max-width:640px){.header-inner{flex-wrap:wrap;padding-top:16px;padding-bottom:12px;gap:10px}nav{gap:15px;flex-wrap:wrap}}
+
+/* Keep the page flush with its containing window at every breakpoint. */
+html,body{width:100%;min-width:0;max-width:100%;overflow-x:hidden}.site-header,.hero,main,footer{width:100%}.header-inner,.portfolio{width:100%;min-width:0}.grid{width:100%;min-width:0}.thumbnail img,video{max-width:100%}
+@media(max-width:640px){.header-inner,.portfolio{padding-left:20px;padding-right:20px}footer{margin-left:0;margin-right:0;padding-left:20px;padding-right:20px}}
