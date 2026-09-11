@@ -3,3 +3,5 @@
 @media(min-width:1500px){.header-inner,.portfolio{max-width:1280px}footer{max-width:1216px}}
 @media(max-width:640px){.header-inner{min-height:74px;padding:0 22px}.wordmark{font-size:21px}nav{gap:17px;font-size:12px}.hero{padding:38px 22px 40px}.hero h1{letter-spacing:-1px}.hero>p:last-child{font-size:14px}.portfolio{padding:36px 22px 48px}.section-heading{margin-bottom:24px}h2{font-size:25px}.section-heading p{font-size:13px}.project-count{display:none}.grid{grid-template-columns:1fr;gap:28px}.project-heading h3{font-size:20px}footer{margin:0 22px;padding:25px 0;flex-wrap:wrap}footer p{order:3;width:100%;margin:0}dialog{width:calc(100% - 24px)}.player-heading{padding:18px}.player-heading h2{font-size:21px}}
 @media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+
+.tools-portfolio{border-top:1px solid #e5e9ee}.project-heading h3{overflow-wrap:anywhere}@media(max-width:640px){.header-inner{flex-wrap:wrap;padding-top:16px;padding-bottom:12px;gap:10px}nav{gap:15px;flex-wrap:wrap}}

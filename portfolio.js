@@ -10,8 +10,8 @@ document.querySelectorAll('[data-project]').forEach(button => {
     const name = button.dataset.project;
     title.textContent = name;
     error.hidden = true;
-    video.src = `${encodeURIComponent(name)}.mp4`;
-    video.poster = `${encodeURIComponent(name)}.png`;
+    video.src = button.dataset.video || `${encodeURIComponent(name)}.mp4`;
+    video.poster = button.querySelector('img').src;
     video.setAttribute('aria-label', `${name} screen capture`);
     document.querySelector('#video-link').href = video.src;
     dialog.showModal();
