@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore the Finally AI portfolio. Watch six AI companions in action, from idea development to fact checking.">
+  <title>Portfolio | Finally AI</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23617fa2'/%3E%3Cpath d='M10 8h14v4H14v4h8v4h-8v6h-4z' fill='white'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+  <script src="portfolio.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#portfolio">Skip to portfolio</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="wordmark" href="https://www.finally-ai.com/" aria-label="Finally AI home">Finally<span>AI</span><span class="brand-dot">.</span></a>
+      <nav aria-label="Main navigation">
+        <a href="https://www.finally-ai.com/">Home</a>
+        <a href="https://www.finally-ai.com/solutions">Solutions</a>
+        <a href="#portfolio" aria-current="page">Portfolio</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="hero" aria-labelledby="page-title">
+      <p class="eyebrow">THE FINALLY AI PORTFOLIO</p>
+      <h1 id="page-title">AI companions in action.</h1>
+      <p>Real tools. Practical possibilities.<br>Explore the work, one demo at a time.</p>
+    </section>
+    <section id="portfolio" class="portfolio" aria-labelledby="gallery-title">
+      <div class="section-heading"><div><h2 id="gallery-title">Explore our work</h2><p>Select a project to watch its screen capture.</p></div><span class="project-count">06 projects</span></div>
+      <div class="grid">
+        <article class="project"><button class="thumbnail" data-project="Fact Checker" aria-label="Watch Fact Checker"><img src="Fact%20Checker.png" alt="Fact Checker application preview" width="1600" height="900"><span class="play" aria-hidden="true">▶</span><span class="watch" aria-hidden="true">Watch demo ↗</span></button><div class="project-heading"><h3>Fact Checker</h3><span aria-hidden="true">01</span></div></article>
+        <article class="project"><button class="thumbnail" data-project="Idea Incubator" aria-label="Watch Idea Incubator"><img src="Idea%20Incubator.png" alt="Idea Incubator application preview" width="1600" height="900"><span class="play" aria-hidden="true">▶</span><span class="watch" aria-hidden="true">Watch demo ↗</span></button><div class="project-heading"><h3>Idea Incubator</h3><span aria-hidden="true">02</span></div></article>
+        <article class="project"><button class="thumbnail" data-project="One Click Business" aria-label="Watch One Click Business"><img src="One%20Click%20Business.png" alt="One Click Business application preview" width="1600" height="900" loading="lazy"><span class="play" aria-hidden="true">▶</span><span class="watch" aria-hidden="true">Watch demo ↗</span></button><div class="project-heading"><h3>One Click Business</h3><span aria-hidden="true">03</span></div></article>
+        <article class="project"><button class="thumbnail" data-project="Priorities Sorter" aria-label="Watch Priorities Sorter"><img src="Priorities%20Sorter.png" alt="Priorities Sorter application preview" width="1600" height="900" loading="lazy"><span class="play" aria-hidden="true">▶</span><span class="watch" aria-hidden="true">Watch demo ↗</span></button><div class="project-heading"><h3>Priorities Sorter</h3><span aria-hidden="true">04</span></div></article>
+        <article class="project"><button class="thumbnail" data-project="Problem Solver" aria-label="Watch Problem Solver"><img src="Problem%20Solver.png" alt="Problem Solver application preview" width="1600" height="900" loading="lazy"><span class="play" aria-hidden="true">▶</span><span class="watch" aria-hidden="true">Watch demo ↗</span></button><div class="project-heading"><h3>Problem Solver</h3><span aria-hidden="true">05</span></div></article>
+        <article class="project"><button class="thumbnail" data-project="Survey Minds" aria-label="Watch Survey Minds"><img src="Survey%20Minds.png" alt="Survey Minds application preview" width="1600" height="900" loading="lazy"><span class="play" aria-hidden="true">▶</span><span class="watch" aria-hidden="true">Watch demo ↗</span></button><div class="project-heading"><h3>Survey Minds</h3><span aria-hidden="true">06</span></div></article>
+      </div>
+    </section>
+  </main>
+  <footer><a class="wordmark" href="https://www.finally-ai.com/">Finally<span>AI</span><span class="brand-dot">.</span></a><p>© 2026 Finally AI. All rights reserved.</p><a href="#page-title">Back to top ↑</a></footer>
+  <dialog aria-labelledby="video-title" id="video-dialog">
+    <div class="player-heading"><div><p class="eyebrow">PROJECT DEMO</p><h2 id="video-title"></h2></div><button class="close" aria-label="Close video player" autofocus>✕</button></div>
+    <video controls playsinline preload="none" aria-label="Project screen capture"></video>
+    <p id="video-error" role="alert" hidden>This video could not be played. <a id="video-link">Open the video directly</a>.</p>
+  </dialog>
+</body>
+</html>
