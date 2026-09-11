@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore 11 AI tools through practical screen capture demonstrations from Finally AI.">
+  <title>AI Tools | Finally AI</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23617fa2'/%3E%3Cpath d='M10 8h14v4H14v4h8v4h-8v6h-4z' fill='white'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+  <script src="portfolio.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#ai-tools">Skip to AI Tools</a>
+  <header class="site-header"><div class="header-inner">
+    <a class="wordmark" href="https://www.finally-ai.com/" aria-label="Finally AI home">Finally<span>AI</span><span class="brand-dot">.</span></a>
+    <nav aria-label="Main navigation">
+      <a href="https://www.finally-ai.com/">Home</a>
+      <a href="index.html#portfolio">Projects</a>
+      <a href="ai-tools.html" aria-current="page">AI Tools</a>
+    </nav>
+  </div></header>
+  <main>
+    <section class="hero" aria-labelledby="page-title">
+      <p class="eyebrow">THE FINALLY AI TOOLKIT</p>
+      <h1 id="page-title">AI tools in action.</h1>
+      <p>Practical tools. Real workflows.<br>Watch each screen capture and see what it can do.</p>
+    </section>
+$section
+  </main>
+  <dialog aria-labelledby="video-title" id="video-dialog">
+    <div class="player-heading"><div><p class="eyebrow">TOOL DEMO</p><h2 id="video-title"></h2></div><button class="close" aria-label="Close video player" autofocus>✕</button></div>
+    <video controls playsinline preload="none" aria-label="AI tool screen capture"></video>
+    <p id="video-error" role="alert" hidden>This video could not be played. <a id="video-link">Open the video directly</a>.</p>
+  </dialog>
+  <script>
+    (() => {
+      const sendHeight = () => parent.postMessage({ type: 'finally-ai-height', height: document.documentElement.scrollHeight }, '*');
+      addEventListener('load', sendHeight);
+      new ResizeObserver(sendHeight).observe(document.documentElement);
+    })();
+  </script>
+</body>
+</html>
