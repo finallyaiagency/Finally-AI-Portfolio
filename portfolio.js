@@ -4,6 +4,15 @@ const title = document.querySelector('#video-title');
 const error = document.querySelector('#video-error');
 let opener;
 
+const keepMuted = () => {
+  video.muted = true;
+  video.defaultMuted = true;
+  video.volume = 0;
+};
+
+keepMuted();
+video.addEventListener('volumechange', keepMuted);
+
 document.querySelectorAll('[data-project]').forEach(button => {
   button.addEventListener('click', () => {
     opener = button;
@@ -14,6 +23,7 @@ document.querySelectorAll('[data-project]').forEach(button => {
     video.poster = button.querySelector('img').src;
     video.setAttribute('aria-label', `${name} screen capture`);
     document.querySelector('#video-link').href = video.src;
+    keepMuted();
     dialog.showModal();
     video.play().catch(() => { /* Native controls remain available if autoplay is blocked. */ });
   });
