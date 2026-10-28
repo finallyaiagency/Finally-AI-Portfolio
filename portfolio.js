@@ -20,7 +20,9 @@ document.querySelectorAll('[data-project]').forEach(button => {
     title.textContent = name;
     error.hidden = true;
     video.src = button.dataset.video || `${encodeURIComponent(name)}.mp4`;
-    video.poster = button.querySelector('img').src;
+    const preview = button.querySelector('img');
+    if (preview) video.poster = preview.currentSrc || preview.src;
+    else video.removeAttribute('poster');
     video.setAttribute('aria-label', `${name} screen capture`);
     document.querySelector('#video-link').href = video.src;
     keepMuted();
