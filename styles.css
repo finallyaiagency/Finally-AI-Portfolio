@@ -9,3 +9,5 @@
 /* Keep the page flush with its containing window at every breakpoint. */
 html,body{width:100%;min-width:0;max-width:100%;overflow-x:hidden}.site-header,.hero,main,footer{width:100%}.header-inner,.portfolio{width:100%;min-width:0}.grid{width:100%;min-width:0}.thumbnail img,video{max-width:100%}
 @media(max-width:640px){.header-inner,.portfolio{padding-left:20px;padding-right:20px}footer{margin-left:0;margin-right:0;padding-left:20px;padding-right:20px}}
+
+.video-embed{display:block;width:100%;height:min(72dvh,700px);border:0;background:#080b10}.video-embed[hidden]{display:none}
