@@ -21,7 +21,7 @@ document.querySelectorAll('[data-project]').forEach(button => {
     title.textContent = name;
     error.hidden = true;
     const source = button.dataset.video || `${encodeURIComponent(name)}.mp4`;
-    const driveMatch = source.match(/drive\\.google\\.com\\/uc\\?[^#]*\\bid=([^&]+)/);
+    const driveMatch = source.match(/drive\.google\.com\/uc\?[^#]*\bid=([^&]+)/);
     const preview = button.querySelector('img');
     if (driveMatch) {
       video.pause();
